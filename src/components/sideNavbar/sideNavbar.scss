@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+@import '../../styles/responsive.scss';
+
+.sideNavbar {
+  width: 100%;
+  height: 100%;
+  background-color: $white-color;
+
+  .logo {
+    padding: 19px 16px 20px 16px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    color: #272727;
+  }
+
+  .menu {
+    padding: 24px 16px;
+    border-top: 2px solid $light-gray;
+  }
+
+  .logout {
+    padding: 24px 16px;
+  }
+}

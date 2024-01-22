@@ -1,0 +1,41 @@
+@import './variables.scss';
+@import './responsive.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: 'Tajawal', sans-serif;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.header {
+  padding: 22px 24px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #45464E;
+  background-color: $white-color;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+
+  .sideNavContainer {
+    width: 236px;
+    height: 100%;
+  }
+
+  .contentContainer {
+    flex: 1;
+  }
+}
