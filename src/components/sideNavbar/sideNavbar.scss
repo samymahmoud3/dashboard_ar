@@ -18,9 +18,47 @@
   .menu {
     padding: 24px 16px;
     border-top: 2px solid $light-gray;
+    display: flex;
+    flex-direction: column;
+
+    .item {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: $gray-color;
+      padding: 8px 16px 8px 24px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      transition: all 0.1s ease;
+
+      .itemTitle {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+        margin-right: 6px;
+      }
+    }
+
+    .active {
+      background-color: $yellow-color;
+      color: $white-color;
+    }
   }
 
   .logout {
-    padding: 24px 16px;
+    margin: 24px 16px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $gray-color;
+    padding: 8px 16px 8px 24px;
+    border-radius: 6px;
+
+    .title {
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 500;
+      margin-right: 6px;
+    }
   }
 }

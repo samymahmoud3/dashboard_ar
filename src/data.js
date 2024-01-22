@@ -1,0 +1,70 @@
+export const menu = [
+  {
+    id: 1,
+    title: "الرئيسية",
+    url: "/",
+    icon: "home.svg",
+    lightIcon: "light-home.svg",
+  },
+  {
+    id: 2,
+    title: "الحجوزات",
+    url: "/bookings",
+    icon: "bookings.svg",
+    lightIcon: "light-bookings.svg",
+  },
+  {
+    id: 3,
+    title: "المستخدمين",
+    url: "/users",
+    icon: "users.svg",
+  },
+  {
+    id: 4,
+    title: "وكلاء السفر",
+    url: "/travelPartners",
+    icon: "travelPartners.svg",
+  },
+  {
+    id: 5,
+    title: "كن شريكا",
+    url: "/driver",
+    icon: "driver.svg",
+  },
+  {
+    id: 6,
+    title: "مدونتنا",
+    url: "/blogs",
+    icon: "blogs.svg",
+  },
+  {
+    id: 7,
+    title: "الباقات",
+    url: "/packages",
+    icon: "packages.svg",
+  },
+  {
+    id: 8,
+    title: "المزارات",
+    url: "/attractions",
+    icon: "attractions.svg",
+  },
+  {
+    id: 8,
+    title: "الفنادق",
+    url: "/hotels",
+    icon: "hotels.svg",
+  },
+  {
+    id: 9,
+    title: "الولاء و المكافات",
+    url: "/rewards",
+    icon: "rewards.svg",
+  },
+  {
+    id: 10,
+    title: "الاعدادات",
+    url: "/settings",
+    icon: "settings.svg",
+  },
+];

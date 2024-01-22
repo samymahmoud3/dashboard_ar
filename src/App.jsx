@@ -26,6 +26,10 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home />
       },
+      {
+        path: '/bookings',
+        element: <Home />
+      },
     ]
   },
 ]);
