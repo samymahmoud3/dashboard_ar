@@ -13,6 +13,12 @@
     line-height: 29px;
     font-weight: 700;
     color: #272727;
+
+    @include lg {
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 18px;
+    }
   }
 
   .menu {
@@ -20,6 +26,10 @@
     border-top: 2px solid $light-gray;
     display: flex;
     flex-direction: column;
+
+    @include lg {
+      padding: 20px 14px;
+    }
 
     .item {
       display: flex;
@@ -31,11 +41,20 @@
       margin-bottom: 12px;
       transition: all 0.1s ease;
 
+      @include lg {
+        padding: 5px;
+        width: fit-content;
+      }
+
       .itemTitle {
         font-size: 16px;
         line-height: 19px;
         font-weight: 500;
         margin-right: 6px;
+
+        @include lg {
+          display: none;
+        }
       }
     }
 
@@ -46,6 +65,7 @@
   }
 
   .logout {
+    position: absolute;
     margin: 24px 16px;
     display: flex;
     align-items: center;
@@ -53,12 +73,22 @@
     color: $gray-color;
     padding: 8px 16px 8px 24px;
     border-radius: 6px;
+    bottom: 0;
+
+    @include lg {
+      padding: 5px;
+      width: fit-content;
+    }
 
     .title {
       font-size: 16px;
       line-height: 19px;
       font-weight: 500;
       margin-right: 6px;
+
+      @include lg {
+        display: none;
+      }
     }
   }
 }
