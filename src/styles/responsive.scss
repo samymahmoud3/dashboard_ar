@@ -1,4 +1,5 @@
 $sm: 480px;
+$smd: 600px;
 $md: 768px;
 $lg: 1024px;
 $xl: 1240px;
@@ -6,6 +7,11 @@ $xxl: 1400px;
 
 @mixin sm {
   @media screen and (max-width: ($sm)) {
+    @content;
+  }
+}
+@mixin smd {
+  @media screen and (max-width: ($smd)) {
     @content;
   }
 }

@@ -11,7 +11,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      gap: 10px;
+      gap: 20px;
 
       .item {
         width: 273px;
@@ -21,6 +21,22 @@
         display: flex;
         align-items: center;
         padding: 24px 20px;
+
+        @include xl {
+          width: 400px;
+        }
+
+        @include xl {
+          width: 330px;
+        }
+
+        @include md {
+          width: 230px;
+        }
+
+        @include smd {
+          width: 100%;
+        }
 
         .img {
           width: 56px;
@@ -41,6 +57,10 @@
           line-height: 28px;
           font-weight: 700;
           color: #272727;
+
+          @include sm {
+            font-size: 17px;
+          }
 
           span {
             font-size: 14px;
@@ -65,12 +85,17 @@
           line-height: 29px;
           font-weight: 500;
           color: $dark-color;
+
+          @include sm {
+            font-size: 20px;
+          }
         }
 
         .actions {
           position: relative;
           display: flex;
           align-items: center;
+
           .download {
             background-color: $yellow-color;
             color: $white-color;
@@ -84,16 +109,26 @@
             cursor: pointer;
             height: 42px;
             margin-left: 8px;
+
+            @include sm {
+              padding: 8px 10px;
+              height: 35px;
+            }
           }
 
           .filter {
-            
+
             background-color: $white-color;
             padding: 12px 16px;
             border-radius: 4px;
             border: 1px solid $dark-color;
             height: 42px;
             cursor: pointer;
+
+            @include sm {
+              padding: 8px 10px;
+              height: 35px;
+            }
           }
         }
       }
@@ -103,11 +138,15 @@
       margin-top: 24px;
 
       .title {
-          font-size: 24px;
-          line-height: 29px;
-          font-weight: 500;
-          color: $dark-color;
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 500;
+        color: $dark-color;
+
+        @include sm {
+          font-size: 20px;
         }
+      }
     }
   }
 }
