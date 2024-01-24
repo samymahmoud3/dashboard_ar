@@ -273,3 +273,61 @@ export const bookingRows = [
     status: "progress.svg",
   },
 ];
+
+export const bookingStats = [
+  {
+    id: 1,
+    title: "الحجوزات",
+    icon: "users-stats.svg",
+    time: ["باليوم","بالاسبوع","بالشهر"],
+    numbers: [
+      {
+        title:"عدد الحجوزات",
+        number: 300,
+        titleColor: "#8B8D97",
+        numberColor:"#45464E"
+      },
+      {
+        title:"الحجوزات المكتمله",
+        number: 200,
+        titleColor: "#00D015",
+        numberColor:"#00D015"
+      },
+      {
+        title:"الحجوزات الغير مكتمله",
+        number: 100,
+        titleColor: "#FF2619",
+        numberColor:"#FF2619"
+      },
+    ]
+  },
+];
+
+export const paymentMethods = [
+  {
+    id: 1,
+    title: "وسائل الدفع",
+    icon: "users-stats.svg",
+    time: ["باليوم","بالاسبوع","بالشهر"],
+    numbers: [
+      {
+        title:"دفع ببطاقه الائتمان ",
+        number: "%0",
+        titleColor: "#8B8D97",
+        numberColor:"#45464E"
+      },
+      {
+        title:"دفع عند الوصول",
+        number: "50%",
+        titleColor: "#8B8D97",
+        numberColor:"#45464E"
+      },
+      {
+        title:"دفع جزء نقدي",
+        number: "%50",
+        titleColor: "#8B8D97",
+        numberColor:"#45464E"
+      },
+    ]
+  },
+];
