@@ -1,11 +1,13 @@
-import { bookingRows, bookingStats, paymentMethods } from '../../data';
 import { useState } from 'react';
+import { bookingRows, bookingStats, paymentMethods } from '../../data';
 import TableData from '../../components/tableData/TableData';
-import './bookings.scss';
 import Stats from '../../components/stats/Stats';
+import ClientStepper from '../../components/clientStepper/ClientStepper';
+import './bookings.scss';
 
 const Bookings = () => {
   const [open, setOpen] = useState(false);
+  const [openStepper, setOpenStepper] = useState(false);
 
   const columns = [
     {
@@ -59,11 +61,11 @@ const Bookings = () => {
     createBookingData(
       item.id,
       item.name,
-      item.phone,
+      <p style={{direction:"ltr"}}>{ item.phone }</p>,
       item.trip,
       item.bookingDate,
       item.payment,
-      <img src={ item.status } alt='status' />
+      <img style={{cursor:"pointer"}} src={ item.status } alt='status' onClick={() => setOpenStepper(true)} />
     )
   ));
   
@@ -109,7 +111,7 @@ const Bookings = () => {
           <Stats data={bookingStats} />
           <Stats data={paymentMethods} />
         </div>
-        <div className='bookingsTable'>
+        <div className='bookingsTable' >
           <div className='head'>
             <div className='title'>الحجوزات</div>
             <div className='actions'>
@@ -325,6 +327,9 @@ const Bookings = () => {
             </div>
           </div>
           <TableData columns={ columns } rows={ rows } numbers={ 8 } />
+          {
+            openStepper && <ClientStepper setOpenStepper={setOpenStepper} />
+          }
         </div>
       </div>
     </div>

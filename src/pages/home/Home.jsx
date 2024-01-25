@@ -100,7 +100,15 @@ const Home = () => {
     return { id, name, phone, bookingDate, revenues, expenses, profits };
   }
   const profitsData = profitsRows.map((item) => (
-    createData(item.id, item.name, item.phone, item.bookingDate, item.revenues, item.expenses, item.profits)
+    createData(
+      item.id,
+      item.name,
+      <p style={{direction:"ltr"}}>{ item.phone }</p>,
+      item.bookingDate,
+      item.revenues,
+      item.expenses,
+      item.profits
+    )
   ));
 
   function createBookingData(id, name, phone, trip, bookingDate, payment, status) {
@@ -110,7 +118,7 @@ const Home = () => {
     createBookingData(
       item.id,
       item.name,
-      item.phone,
+      <p style={{direction:"ltr"}}>{ item.phone }</p>,
       item.trip,
       item.bookingDate,
       item.payment,
