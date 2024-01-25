@@ -23,8 +23,9 @@ export const menu = [
   {
     id: 4,
     title: "وكلاء السفر",
-    url: "/travelPartners",
+    url: "/travel-partners",
     icon: "travelPartners.svg",
+    lightIcon: "light-travel_partners.svg",
   },
   {
     id: 5,
@@ -570,6 +571,72 @@ export const waitListRows = [
   },
 ];
 
+export const travelPartnersRows = [
+  {
+    id: 1,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    bookingNumbers: "20",
+  },
+  {
+    id: 2,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    bookingNumbers: "20",
+  },
+  {
+    id: 3,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    bookingNumbers: "20",
+  },
+  {
+    id: 4,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    bookingNumbers: "20",
+  },
+  {
+    id: 5,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    bookingNumbers: "20",
+  },
+  {
+    id: 6,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    bookingNumbers: "20",
+  },
+  {
+    id: 7,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    bookingNumbers: "20",
+  },
+  {
+    id: 8,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    bookingNumbers: "20",
+  },
+  {
+    id: 9,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    bookingNumbers: "20",
+  },
+];
+
 export const bookingStats = [
   {
     id: 1,
@@ -649,6 +716,35 @@ export const driversStats = [
       },
       {
         title:"قائمة الانتظار",
+        number: 100,
+        titleColor: "#FF2619",
+        numberColor:"#FF2619"
+      },
+    ]
+  },
+];
+
+export const travelPartnersStats = [
+  {
+    id: 1,
+    title: "وكلاء السفر",
+    icon: "users-stats.svg",
+    time: ["باليوم","بالاسبوع","بالشهر"],
+    numbers: [
+      {
+        title:"عدد وكلاء السفر",
+        number: 300,
+        titleColor: "#8B8D97",
+        numberColor:"#45464E"
+      },
+      {
+        title:"وكلاء السفر الجدد",
+        number: 200,
+        titleColor: "#00D015",
+        numberColor:"#00D015"
+      },
+      {
+        title:"عدد حجز وكلاء السفر",
         number: 100,
         titleColor: "#FF2619",
         numberColor:"#FF2619"

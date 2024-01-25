@@ -4,6 +4,7 @@ import SideNavbar from "./components/sideNavbar/SideNavbar";
 import Bookings from "./pages/bookings/Bookings";
 import Users from "./pages/users/Users";
 import Drivers from "./pages/drivers/Drivers";
+import TravelPartners from "./pages/travelPartners/TravelPartners";
 import './styles/global.scss';
 
 function App() {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: '/drivers',
         element: <Drivers />
+      },
+      {
+        path: '/travel-partners',
+        element: <TravelPartners />
       },
     ]
   },
