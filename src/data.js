@@ -18,6 +18,7 @@ export const menu = [
     title: "المستخدمين",
     url: "/users",
     icon: "users.svg",
+    lightIcon: "light-users.svg",
   },
   {
     id: 4,
@@ -274,6 +275,90 @@ export const bookingRows = [
   },
 ];
 
+export const usersRows = [
+  {
+    id: 1,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    bookingNumbers: "20",
+    cancelledNumbers: "4",
+    delete: "delete.svg",
+  },
+  {
+    id: 2,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    bookingNumbers: "20",
+    cancelledNumbers: "4",
+    delete: "delete.svg",
+  },
+  {
+    id: 3,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    bookingNumbers: "20",
+    cancelledNumbers: "4",
+    delete: "delete.svg",
+  },
+  {
+    id: 4,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    bookingNumbers: "20",
+    cancelledNumbers: "4",
+    delete: "delete.svg",
+  },
+  {
+    id: 5,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    bookingNumbers: "20",
+    cancelledNumbers: "4",
+    delete: "delete.svg",
+  },
+  {
+    id: 6,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    bookingNumbers: "20",
+    cancelledNumbers: "4",
+    delete: "delete.svg",
+  },
+  {
+    id: 7,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    bookingNumbers: "20",
+    cancelledNumbers: "4",
+    delete: "delete.svg",
+  },
+  {
+    id: 8,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    bookingNumbers: "20",
+    cancelledNumbers: "4",
+    delete: "delete.svg",
+  },
+  {
+    id: 9,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    bookingNumbers: "20",
+    cancelledNumbers: "4",
+    delete: "delete.svg",
+  },
+];
+
 export const bookingStats = [
   {
     id: 1,
@@ -295,6 +380,35 @@ export const bookingStats = [
       },
       {
         title:"الحجوزات الغير مكتمله",
+        number: 100,
+        titleColor: "#FF2619",
+        numberColor:"#FF2619"
+      },
+    ]
+  },
+];
+
+export const usersStats = [
+  {
+    id: 1,
+    title: "المستخدمين",
+    icon: "users-stats.svg",
+    time: ["باليوم","بالاسبوع","بالشهر"],
+    numbers: [
+      {
+        title:"عدد المستخدمين",
+        number: 300,
+        titleColor: "#8B8D97",
+        numberColor:"#45464E"
+      },
+      {
+        title:"عدد الغاء الحجز",
+        number: 200,
+        titleColor: "#00D015",
+        numberColor:"#00D015"
+      },
+      {
+        title:"عدد الغاء الحجز",
         number: 100,
         titleColor: "#FF2619",
         numberColor:"#FF2619"

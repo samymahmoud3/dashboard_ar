@@ -3,6 +3,7 @@ import Home from "./pages/home/Home";
 import SideNavbar from "./components/sideNavbar/SideNavbar";
 import Bookings from "./pages/bookings/Bookings";
 import './styles/global.scss';
+import Users from "./pages/users/Users";
 
 function App() {
   const Layout = () => {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: '/bookings',
         element: <Bookings />
+      },
+      {
+        path: '/users',
+        element: <Users />
       },
     ]
   },

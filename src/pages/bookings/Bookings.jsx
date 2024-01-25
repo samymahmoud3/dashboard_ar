@@ -105,7 +105,7 @@ const Bookings = () => {
 
   return (
     <div className='bookings'>
-      <div className='nav-header'>الرئيسية</div>
+      <div className='nav-header'>الحجوزات</div>
       <div className='content'>
         <div className='header'>
           <Stats data={bookingStats} />
