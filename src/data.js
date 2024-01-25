@@ -29,8 +29,9 @@ export const menu = [
   {
     id: 5,
     title: "كن شريكا",
-    url: "/driver",
+    url: "/drivers",
     icon: "driver.svg",
+    lightIcon: "light-drivers.svg",
   },
   {
     id: 6,
@@ -359,6 +360,216 @@ export const usersRows = [
   },
 ];
 
+export const driversRows = [
+  {
+    id: 1,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    carType:"فيرارى",
+    delete: "delete.svg",
+  },
+  {
+    id: 2,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    carType:"فيرارى",
+    delete: "delete.svg",
+  },
+  {
+    id: 3,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    carType:"فيرارى",
+    delete: "delete.svg",
+  },
+  {
+    id: 4,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    carType:"فيرارى",
+    delete: "delete.svg",
+  },
+  {
+    id: 5,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    carType:"فيرارى",
+    delete: "delete.svg",
+  },
+  {
+    id: 6,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    carType:"فيرارى",
+    delete: "delete.svg",
+  },
+  {
+    id: 7,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    carType:"فيرارى",
+    delete: "delete.svg",
+  },
+  {
+    id: 8,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    carType:"فيرارى",
+    delete: "delete.svg",
+  },
+];
+
+export const waitListRows = [
+  {
+    id: 1,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    carType: "فيرارى",
+    status: [
+      {
+        id: 1,
+        true: "true.svg",
+        false: "false.svg",
+      }
+    ],
+  },
+  {
+    id: 2,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    carType: "فيرارى",
+    status: [
+      {
+        id: 1,
+        true: "true.svg",
+        false: "false.svg",
+      }
+    ],
+  },
+  {
+    id: 3,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    carType: "فيرارى",
+    status: [
+      {
+        id: 1,
+        true: "true.svg",
+        false: "false.svg",
+      }
+    ],
+  },
+  {
+    id: 4,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    carType: "فيرارى",
+    status: [
+      {
+        id: 1,
+        true: "true.svg",
+        false: "false.svg",
+      }
+    ],
+  },
+  {
+    id: 5,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    carType: "فيرارى",
+    status: [
+      {
+        id: 1,
+        true: "true.svg",
+        false: "false.svg",
+      }
+    ],
+  },
+  {
+    id: 6,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    carType: "فيرارى",
+    status: [
+      {
+        id: 1,
+        true: "true.svg",
+        false: "false.svg",
+      }
+    ],
+  },
+  {
+    id: 7,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    carType: "فيرارى",
+    status: [
+      {
+        id: 1,
+        true: "true.svg",
+        false: "false.svg",
+      }
+    ],
+  },
+  {
+    id: 8,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    carType: "فيرارى",
+    status: [
+      {
+        id: 1,
+        true: "true.svg",
+        false: "false.svg",
+      }
+    ],
+  },
+  {
+    id: 9,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    carType: "فيرارى",
+    status: [
+      {
+        id: 1,
+        true: "true.svg",
+        false: "false.svg",
+      }
+    ],
+  },
+  {
+    id: 10,
+    name: "محمد احمد علي محمد",
+    email: "mohamedsaid@gmail.com",
+    phone: "+20 994956611",
+    carType: "فيرارى",
+    status: [
+      {
+        id: 1,
+        true: "true.svg",
+        false: "false.svg",
+      }
+    ],
+  },
+];
+
 export const bookingStats = [
   {
     id: 1,
@@ -409,6 +620,35 @@ export const usersStats = [
       },
       {
         title:"عدد الغاء الحجز",
+        number: 100,
+        titleColor: "#FF2619",
+        numberColor:"#FF2619"
+      },
+    ]
+  },
+];
+
+export const driversStats = [
+  {
+    id: 1,
+    title: "السائقين",
+    icon: "users-stats.svg",
+    time: ["باليوم","بالاسبوع","بالشهر"],
+    numbers: [
+      {
+        title:"عدد السائقين",
+        number: 300,
+        titleColor: "#8B8D97",
+        numberColor:"#45464E"
+      },
+      {
+        title:"السائقين الجدد",
+        number: 200,
+        titleColor: "#00D015",
+        numberColor:"#00D015"
+      },
+      {
+        title:"قائمة الانتظار",
         number: 100,
         titleColor: "#FF2619",
         numberColor:"#FF2619"
