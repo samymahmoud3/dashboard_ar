@@ -5,6 +5,7 @@ import Bookings from "./pages/bookings/Bookings";
 import Users from "./pages/users/Users";
 import Drivers from "./pages/drivers/Drivers";
 import TravelPartners from "./pages/travelPartners/TravelPartners";
+import Blogs from "./pages/blogs/Blogs";
 import './styles/global.scss';
 
 function App() {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: '/travel-partners',
         element: <TravelPartners />
+      },
+      {
+        path: '/blogs',
+        element: <Blogs />
       },
     ]
   },

@@ -39,6 +39,7 @@ export const menu = [
     title: "مدونتنا",
     url: "/blogs",
     icon: "blogs.svg",
+    lightIcon: "light-blogs.svg",
   },
   {
     id: 7,
@@ -637,6 +638,121 @@ export const travelPartnersRows = [
   },
 ];
 
+export const blogsRows = [
+  {
+    id: 1,
+    name: "الحج و العمرة فى شهر رمضان",
+    city: "المدينة المنورة",
+    date: "30.10.2023",
+    counts: "3300 زيارة",
+    actions: [
+      {
+        id: 1,
+        edit: "edit.svg",
+        delete: "delete.svg",
+      }
+    ],
+  },
+  {
+    id: 2,
+    name: "الحج و العمرة فى شهر رمضان",
+    city: "المدينة المنورة",
+    date: "30.10.2023",
+    counts: "3300 زيارة",
+    actions: [
+      {
+        id: 1,
+        edit: "edit.svg",
+        delete: "delete.svg",
+      }
+    ],
+  },
+  {
+    id: 3,
+    name: "الحج و العمرة فى شهر رمضان",
+    city: "المدينة المنورة",
+    date: "30.10.2023",
+    counts: "3300 زيارة",
+    actions: [
+      {
+        id: 1,
+        edit: "edit.svg",
+        delete: "delete.svg",
+      }
+    ],
+  },
+  {
+    id: 4,
+    name: "الحج و العمرة فى شهر رمضان",
+    city: "المدينة المنورة",
+    date: "30.10.2023",
+    counts: "3300 زيارة",
+    actions: [
+     {
+        id: 1,
+        edit: "edit.svg",
+        delete: "delete.svg",
+      }
+    ],
+  },
+  {
+    id: 5,
+    name: "الحج و العمرة فى شهر رمضان",
+    city: "المدينة المنورة",
+    date: "30.10.2023",
+    counts: "3300 زيارة",
+    actions: [
+      {
+        id: 1,
+        edit: "edit.svg",
+        delete: "delete.svg",
+      }
+    ],
+  },
+  {
+    id: 6,
+    name: "الحج و العمرة فى شهر رمضان",
+    city: "المدينة المنورة",
+    date: "30.10.2023",
+    counts: "3300 زيارة",
+    actions: [
+      {
+        id: 1,
+        edit: "edit.svg",
+        delete: "delete.svg",
+      }
+    ],
+  },
+  {
+    id: 7,
+    name: "الحج و العمرة فى شهر رمضان",
+    city: "المدينة المنورة",
+    date: "30.10.2023",
+    counts: "3300 زيارة",
+    actions: [
+      {
+        id: 1,
+        edit: "edit.svg",
+        delete: "delete.svg",
+      }
+    ],
+  },
+  {
+    id: 8,
+    name: "الحج و العمرة فى شهر رمضان",
+    city: "المدينة المنورة",
+    date: "30.10.2023",
+    counts: "3300 زيارة",
+    actions: [
+      {
+        id: 1,
+        edit: "edit.svg",
+        delete: "delete.svg",
+      }
+    ],
+  },
+];
+
 export const bookingStats = [
   {
     id: 1,
@@ -746,6 +862,35 @@ export const travelPartnersStats = [
       {
         title:"عدد حجز وكلاء السفر",
         number: 100,
+        titleColor: "#FF2619",
+        numberColor:"#FF2619"
+      },
+    ]
+  },
+];
+
+export const blogsStats = [
+  {
+    id: 1,
+    title: "المدونات",
+    icon: "users-stats.svg",
+    time: ["باليوم","بالاسبوع","بالشهر"],
+    numbers: [
+      {
+        title:"عدد المدونات",
+        number: 300,
+        titleColor: "#8B8D97",
+        numberColor:"#45464E"
+      },
+      {
+        title:"عدد المدن",
+        number: 6,
+        titleColor: "#00D015",
+        numberColor:"#00D015"
+      },
+      {
+        title:"عدد الزيارات",
+        number: 10000,
         titleColor: "#FF2619",
         numberColor:"#FF2619"
       },
