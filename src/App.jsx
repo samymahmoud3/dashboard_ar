@@ -6,7 +6,9 @@ import Users from "./pages/users/Users";
 import Drivers from "./pages/drivers/Drivers";
 import TravelPartners from "./pages/travelPartners/TravelPartners";
 import Blogs from "./pages/blogs/Blogs";
+import Packages from "./pages/packages/Packages";
 import './styles/global.scss';
+import PackagesControl from "./pages/packagesControl/PackagesControl";
 
 function App() {
   const Layout = () => {
@@ -50,6 +52,14 @@ const router = createBrowserRouter([
       {
         path: '/blogs',
         element: <Blogs />
+      },
+      {
+        path: '/packages',
+        element: <Packages />
+      },
+      {
+        path: '/packages-control',
+        element: <PackagesControl />
       },
     ]
   },

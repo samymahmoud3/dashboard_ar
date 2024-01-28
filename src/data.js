@@ -46,6 +46,7 @@ export const menu = [
     title: "الباقات",
     url: "/packages",
     icon: "packages.svg",
+    lightIcon: "light-packages.svg",
   },
   {
     id: 8,
@@ -753,6 +754,124 @@ export const blogsRows = [
   },
 ];
 
+export const packagesRows = [
+  {
+    id: 1,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    category: "اقتصادية",
+    payment: "نقدي",
+    status: "progress.svg",
+  },
+  {
+    id: 2,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    category: "اقتصادية",
+    payment: "نقدي",
+    status: "completed.svg",
+  },
+  {
+    id: 3,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    category: "اقتصادية",
+    payment: "نقدي",
+    status: "cancelled.svg",
+  },
+  {
+    id: 4,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    category: "اقتصادية",
+    payment: "نقدي",
+    status: "progress.svg",
+  },
+  {
+    id: 5,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    category: "اقتصادية",
+    payment: "نقدي",
+    status: "progress.svg",
+  },
+  {
+    id: 6,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    category: "اقتصادية",
+    payment: "نقدي",
+    status: "progress.svg",
+  },
+  {
+    id: 7,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    category: "اقتصادية",
+    payment: "نقدي",
+    status: "progress.svg",
+  },
+  {
+    id: 8,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    category: "اقتصادية",
+    payment: "نقدي",
+    status: "progress.svg",
+  },
+  {
+    id: 9,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    category: "اقتصادية",
+    payment: "نقدي",
+    status: "progress.svg",
+  },
+];
+
+export const packagesControlRows = [
+  {
+    id: 1,
+    place: "مكه/مكه/مكه",
+    car1: "30.25$",
+    car2: "200",
+    car3: "30.25",
+    car4: "300",
+    car5: "300",
+    car6: "30.10.2023",
+  },
+  {
+    id: 2,
+    place: "مكه/مكه/مكه",
+    car1: "30.25$",
+    car2: "200",
+    car3: "30.25",
+    car4: "300",
+    car5: "300",
+    car6: "30.10.2023",
+  },
+  {
+    id: 3,
+    place: "مكه/مكه/مكه",
+    car1: "30.25$",
+    car2: "200",
+    car3: "30.25",
+    car4: "300",
+    car5: "300",
+    car6: "30.10.2023",
+  },
+  {
+    id: 4,
+    place: "مكه/مكه/مكه",
+    car1: "30.25$",
+    car2: "200",
+    car3: "30.25",
+    car4: "300",
+    car5: "300",
+    car6: "30.10.2023",
+  },
+];
+
 export const bookingStats = [
   {
     id: 1,
@@ -890,6 +1009,35 @@ export const blogsStats = [
       },
       {
         title:"عدد الزيارات",
+        number: 10000,
+        titleColor: "#FF2619",
+        numberColor:"#FF2619"
+      },
+    ]
+  },
+];
+
+export const packagesStats = [
+  {
+    id: 1,
+    title: "الباقات",
+    icon: "users-stats.svg",
+    time: ["باليوم","بالاسبوع","بالشهر"],
+    numbers: [
+      {
+        title:"عدد الباقات",
+        number: 300,
+        titleColor: "#8B8D97",
+        numberColor:"#45464E"
+      },
+      {
+        title:"الحجوزات المكتملة",
+        number: 6,
+        titleColor: "#00D015",
+        numberColor:"#00D015"
+      },
+      {
+        title:"الحجوزات الغير مكتمله",
         number: 10000,
         titleColor: "#FF2619",
         numberColor:"#FF2619"
