@@ -51,8 +51,9 @@ export const menu = [
   {
     id: 8,
     title: "المزارات",
-    url: "/attractions",
-    icon: "attractions.svg",
+    url: "/landmarks",
+    icon: "landmarks.svg",
+    lightIcon: "light-landmarks.svg",
   },
   {
     id: 9,
@@ -872,6 +873,90 @@ export const packagesControlRows = [
   },
 ];
 
+export const landmarksRows = [
+  {
+    id: 1,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    place: "مكة",
+    category: "اقتصادية",
+    payment: "نقدي",
+    status: "progress.svg",
+  },
+  {
+    id: 2,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    place: "مكة",
+    category: "اقتصادية",
+    payment: "نقدي",
+    status: "completed.svg",
+  },
+  {
+    id: 3,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    place: "مكة",
+    category: "اقتصادية",
+    payment: "نقدي",
+    status: "cancelled.svg",
+  },
+  {
+    id: 4,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    place: "مكة",
+    category: "اقتصادية",
+    payment: "نقدي",
+    status: "progress.svg",
+  },
+  {
+    id: 5,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    place: "مكة",
+    category: "اقتصادية",
+    payment: "نقدي",
+    status: "progress.svg",
+  },
+  {
+    id: 6,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    place: "مكة",
+    category: "اقتصادية",
+    payment: "نقدي",
+    status: "progress.svg",
+  },
+  {
+    id: 7,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    place: "مكة",
+    category: "اقتصادية",
+    payment: "نقدي",
+    status: "progress.svg",
+  },
+  {
+    id: 8,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    place: "مكة",
+    category: "اقتصادية",
+    payment: "نقدي",
+    status: "progress.svg",
+  },
+  {
+    id: 9,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    place: "مكة",
+    category: "اقتصادية",
+    payment: "نقدي",
+    status: "progress.svg",
+  },
+];
+
 export const bookingStats = [
   {
     id: 1,
@@ -1026,6 +1111,35 @@ export const packagesStats = [
     numbers: [
       {
         title:"عدد الباقات",
+        number: 300,
+        titleColor: "#8B8D97",
+        numberColor:"#45464E"
+      },
+      {
+        title:"الحجوزات المكتملة",
+        number: 6,
+        titleColor: "#00D015",
+        numberColor:"#00D015"
+      },
+      {
+        title:"الحجوزات الغير مكتمله",
+        number: 10000,
+        titleColor: "#FF2619",
+        numberColor:"#FF2619"
+      },
+    ]
+  },
+];
+
+export const landmarksStats = [
+  {
+    id: 1,
+    title: "المزارات",
+    icon: "users-stats.svg",
+    time: ["باليوم","بالاسبوع","بالشهر"],
+    numbers: [
+      {
+        title:"عدد المزارات",
         number: 300,
         titleColor: "#8B8D97",
         numberColor:"#45464E"

@@ -7,8 +7,10 @@ import Drivers from "./pages/drivers/Drivers";
 import TravelPartners from "./pages/travelPartners/TravelPartners";
 import Blogs from "./pages/blogs/Blogs";
 import Packages from "./pages/packages/Packages";
-import './styles/global.scss';
 import PackagesControl from "./pages/packagesControl/PackagesControl";
+import Landmarks from "./pages/landmarks/Landmarks";
+import './styles/global.scss';
+import LandmarksControl from "./pages/landmarksControl/LandmarksControl";
 
 function App() {
   const Layout = () => {
@@ -60,6 +62,14 @@ const router = createBrowserRouter([
       {
         path: '/packages-control',
         element: <PackagesControl />
+      },
+      {
+        path: '/landmarks',
+        element: <Landmarks />
+      },
+      {
+        path: '/landmarks-control',
+        element: <LandmarksControl />
       },
     ]
   },
