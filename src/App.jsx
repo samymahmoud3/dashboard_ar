@@ -9,8 +9,9 @@ import Blogs from "./pages/blogs/Blogs";
 import Packages from "./pages/packages/Packages";
 import PackagesControl from "./pages/packagesControl/PackagesControl";
 import Landmarks from "./pages/landmarks/Landmarks";
-import './styles/global.scss';
 import LandmarksControl from "./pages/landmarksControl/LandmarksControl";
+import Hotels from "./pages/hotels/Hotels";
+import './styles/global.scss';
 
 function App() {
   const Layout = () => {
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
       {
         path: '/landmarks-control',
         element: <LandmarksControl />
+      },
+      {
+        path: '/hotels',
+        element: <Hotels />
       },
     ]
   },

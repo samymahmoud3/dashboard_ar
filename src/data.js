@@ -60,6 +60,7 @@ export const menu = [
     title: "الفنادق",
     url: "/hotels",
     icon: "hotels.svg",
+    lightIcon: "light-hotels.svg",
   },
   {
     id: 10,
@@ -100,7 +101,7 @@ export const homeNumbers = [
     title: "عدد وكلاء السفر",
     img: 'partner-numbers.svg',
   },
-  
+
 ]
 
 export const profitsRows = [
@@ -370,7 +371,7 @@ export const driversRows = [
     name: "محمد احمد علي محمد",
     email: "mohamedsaid@gmail.com",
     phone: "+20 994956611",
-    carType:"فيرارى",
+    carType: "فيرارى",
     delete: "delete.svg",
   },
   {
@@ -378,7 +379,7 @@ export const driversRows = [
     name: "محمد احمد علي محمد",
     email: "mohamedsaid@gmail.com",
     phone: "+20 994956611",
-    carType:"فيرارى",
+    carType: "فيرارى",
     delete: "delete.svg",
   },
   {
@@ -386,7 +387,7 @@ export const driversRows = [
     name: "محمد احمد علي محمد",
     email: "mohamedsaid@gmail.com",
     phone: "+20 994956611",
-    carType:"فيرارى",
+    carType: "فيرارى",
     delete: "delete.svg",
   },
   {
@@ -394,7 +395,7 @@ export const driversRows = [
     name: "محمد احمد علي محمد",
     email: "mohamedsaid@gmail.com",
     phone: "+20 994956611",
-    carType:"فيرارى",
+    carType: "فيرارى",
     delete: "delete.svg",
   },
   {
@@ -402,7 +403,7 @@ export const driversRows = [
     name: "محمد احمد علي محمد",
     email: "mohamedsaid@gmail.com",
     phone: "+20 994956611",
-    carType:"فيرارى",
+    carType: "فيرارى",
     delete: "delete.svg",
   },
   {
@@ -410,7 +411,7 @@ export const driversRows = [
     name: "محمد احمد علي محمد",
     email: "mohamedsaid@gmail.com",
     phone: "+20 994956611",
-    carType:"فيرارى",
+    carType: "فيرارى",
     delete: "delete.svg",
   },
   {
@@ -418,7 +419,7 @@ export const driversRows = [
     name: "محمد احمد علي محمد",
     email: "mohamedsaid@gmail.com",
     phone: "+20 994956611",
-    carType:"فيرارى",
+    carType: "فيرارى",
     delete: "delete.svg",
   },
   {
@@ -426,7 +427,7 @@ export const driversRows = [
     name: "محمد احمد علي محمد",
     email: "mohamedsaid@gmail.com",
     phone: "+20 994956611",
-    carType:"فيرارى",
+    carType: "فيرارى",
     delete: "delete.svg",
   },
 ];
@@ -690,7 +691,7 @@ export const blogsRows = [
     date: "30.10.2023",
     counts: "3300 زيارة",
     actions: [
-     {
+      {
         id: 1,
         edit: "edit.svg",
         delete: "delete.svg",
@@ -957,30 +958,113 @@ export const landmarksRows = [
   },
 ];
 
+export const hotelsRows = [
+  {
+    id: 1,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    email: "mohamed@gmail.com",
+    right: "true.svg",
+    wrong: "false.svg",
+  },
+  {
+    id: 2,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    email: "mohamed@gmail.com",
+    right: "true.svg",
+    wrong: "false.svg",
+  },
+  {
+    id: 3,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    email: "mohamed@gmail.com",
+    right: "true.svg",
+    wrong: "false.svg",
+  },
+  {
+    id: 4,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    email: "mohamed@gmail.com",
+    right: "true.svg",
+    wrong: "false.svg",
+  },
+  {
+    id: 5,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    email: "mohamed@gmail.com",
+    right: "true.svg",
+    wrong: "false.svg",
+  },
+  {
+    id: 6,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    email: "mohamed@gmail.com",
+    right: "true.svg",
+    wrong: "false.svg",
+  },
+  {
+    id: 7,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    email: "mohamed@gmail.com",
+    right: "true.svg",
+    wrong: "false.svg",
+  },
+  {
+    id: 8,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    email: "mohamed@gmail.com",
+    right: "true.svg",
+    wrong: "false.svg",
+  },
+  {
+    id: 9,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    email: "mohamed@gmail.com",
+    right: "true.svg",
+    wrong: "false.svg",
+  },
+  {
+    id: 10,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    email: "mohamed@gmail.com",
+    right: "true.svg",
+    wrong: "false.svg",
+  },
+];
+
 export const bookingStats = [
   {
     id: 1,
     title: "الحجوزات",
     icon: "users-stats.svg",
-    time: ["باليوم","بالاسبوع","بالشهر"],
+    time: ["باليوم", "بالاسبوع", "بالشهر"],
     numbers: [
       {
-        title:"عدد الحجوزات",
+        title: "عدد الحجوزات",
         number: 300,
         titleColor: "#8B8D97",
-        numberColor:"#45464E"
+        numberColor: "#45464E"
       },
       {
-        title:"الحجوزات المكتمله",
+        title: "الحجوزات المكتمله",
         number: 200,
         titleColor: "#00D015",
-        numberColor:"#00D015"
+        numberColor: "#00D015"
       },
       {
-        title:"الحجوزات الغير مكتمله",
+        title: "الحجوزات الغير مكتمله",
         number: 100,
         titleColor: "#FF2619",
-        numberColor:"#FF2619"
+        numberColor: "#FF2619"
       },
     ]
   },
@@ -991,25 +1075,25 @@ export const usersStats = [
     id: 1,
     title: "المستخدمين",
     icon: "users-stats.svg",
-    time: ["باليوم","بالاسبوع","بالشهر"],
+    time: ["باليوم", "بالاسبوع", "بالشهر"],
     numbers: [
       {
-        title:"عدد المستخدمين",
+        title: "عدد المستخدمين",
         number: 300,
         titleColor: "#8B8D97",
-        numberColor:"#45464E"
+        numberColor: "#45464E"
       },
       {
-        title:"عدد الغاء الحجز",
+        title: "عدد الغاء الحجز",
         number: 200,
         titleColor: "#00D015",
-        numberColor:"#00D015"
+        numberColor: "#00D015"
       },
       {
-        title:"عدد الغاء الحجز",
+        title: "عدد الغاء الحجز",
         number: 100,
         titleColor: "#FF2619",
-        numberColor:"#FF2619"
+        numberColor: "#FF2619"
       },
     ]
   },
@@ -1020,25 +1104,25 @@ export const driversStats = [
     id: 1,
     title: "السائقين",
     icon: "users-stats.svg",
-    time: ["باليوم","بالاسبوع","بالشهر"],
+    time: ["باليوم", "بالاسبوع", "بالشهر"],
     numbers: [
       {
-        title:"عدد السائقين",
+        title: "عدد السائقين",
         number: 300,
         titleColor: "#8B8D97",
-        numberColor:"#45464E"
+        numberColor: "#45464E"
       },
       {
-        title:"السائقين الجدد",
+        title: "السائقين الجدد",
         number: 200,
         titleColor: "#00D015",
-        numberColor:"#00D015"
+        numberColor: "#00D015"
       },
       {
-        title:"قائمة الانتظار",
+        title: "قائمة الانتظار",
         number: 100,
         titleColor: "#FF2619",
-        numberColor:"#FF2619"
+        numberColor: "#FF2619"
       },
     ]
   },
@@ -1049,25 +1133,25 @@ export const travelPartnersStats = [
     id: 1,
     title: "وكلاء السفر",
     icon: "users-stats.svg",
-    time: ["باليوم","بالاسبوع","بالشهر"],
+    time: ["باليوم", "بالاسبوع", "بالشهر"],
     numbers: [
       {
-        title:"عدد وكلاء السفر",
+        title: "عدد وكلاء السفر",
         number: 300,
         titleColor: "#8B8D97",
-        numberColor:"#45464E"
+        numberColor: "#45464E"
       },
       {
-        title:"وكلاء السفر الجدد",
+        title: "وكلاء السفر الجدد",
         number: 200,
         titleColor: "#00D015",
-        numberColor:"#00D015"
+        numberColor: "#00D015"
       },
       {
-        title:"عدد حجز وكلاء السفر",
+        title: "عدد حجز وكلاء السفر",
         number: 100,
         titleColor: "#FF2619",
-        numberColor:"#FF2619"
+        numberColor: "#FF2619"
       },
     ]
   },
@@ -1078,25 +1162,25 @@ export const blogsStats = [
     id: 1,
     title: "المدونات",
     icon: "users-stats.svg",
-    time: ["باليوم","بالاسبوع","بالشهر"],
+    time: ["باليوم", "بالاسبوع", "بالشهر"],
     numbers: [
       {
-        title:"عدد المدونات",
+        title: "عدد المدونات",
         number: 300,
         titleColor: "#8B8D97",
-        numberColor:"#45464E"
+        numberColor: "#45464E"
       },
       {
-        title:"عدد المدن",
+        title: "عدد المدن",
         number: 6,
         titleColor: "#00D015",
-        numberColor:"#00D015"
+        numberColor: "#00D015"
       },
       {
-        title:"عدد الزيارات",
+        title: "عدد الزيارات",
         number: 10000,
         titleColor: "#FF2619",
-        numberColor:"#FF2619"
+        numberColor: "#FF2619"
       },
     ]
   },
@@ -1107,25 +1191,25 @@ export const packagesStats = [
     id: 1,
     title: "الباقات",
     icon: "users-stats.svg",
-    time: ["باليوم","بالاسبوع","بالشهر"],
+    time: ["باليوم", "بالاسبوع", "بالشهر"],
     numbers: [
       {
-        title:"عدد الباقات",
+        title: "عدد الباقات",
         number: 300,
         titleColor: "#8B8D97",
-        numberColor:"#45464E"
+        numberColor: "#45464E"
       },
       {
-        title:"الحجوزات المكتملة",
+        title: "الحجوزات المكتملة",
         number: 6,
         titleColor: "#00D015",
-        numberColor:"#00D015"
+        numberColor: "#00D015"
       },
       {
-        title:"الحجوزات الغير مكتمله",
+        title: "الحجوزات الغير مكتمله",
         number: 10000,
         titleColor: "#FF2619",
-        numberColor:"#FF2619"
+        numberColor: "#FF2619"
       },
     ]
   },
@@ -1136,25 +1220,25 @@ export const landmarksStats = [
     id: 1,
     title: "المزارات",
     icon: "users-stats.svg",
-    time: ["باليوم","بالاسبوع","بالشهر"],
+    time: ["باليوم", "بالاسبوع", "بالشهر"],
     numbers: [
       {
-        title:"عدد المزارات",
+        title: "عدد المزارات",
         number: 300,
         titleColor: "#8B8D97",
-        numberColor:"#45464E"
+        numberColor: "#45464E"
       },
       {
-        title:"الحجوزات المكتملة",
+        title: "الحجوزات المكتملة",
         number: 6,
         titleColor: "#00D015",
-        numberColor:"#00D015"
+        numberColor: "#00D015"
       },
       {
-        title:"الحجوزات الغير مكتمله",
+        title: "الحجوزات الغير مكتمله",
         number: 10000,
         titleColor: "#FF2619",
-        numberColor:"#FF2619"
+        numberColor: "#FF2619"
       },
     ]
   },
@@ -1165,25 +1249,25 @@ export const paymentMethods = [
     id: 1,
     title: "وسائل الدفع",
     icon: "users-stats.svg",
-    time: ["باليوم","بالاسبوع","بالشهر"],
+    time: ["باليوم", "بالاسبوع", "بالشهر"],
     numbers: [
       {
-        title:"دفع ببطاقه الائتمان ",
+        title: "دفع ببطاقه الائتمان ",
         number: "%0",
         titleColor: "#8B8D97",
-        numberColor:"#45464E"
+        numberColor: "#45464E"
       },
       {
-        title:"دفع عند الوصول",
+        title: "دفع عند الوصول",
         number: "50%",
         titleColor: "#8B8D97",
-        numberColor:"#45464E"
+        numberColor: "#45464E"
       },
       {
-        title:"دفع جزء نقدي",
+        title: "دفع جزء نقدي",
         number: "%50",
         titleColor: "#8B8D97",
-        numberColor:"#45464E"
+        numberColor: "#45464E"
       },
     ]
   },
