@@ -67,6 +67,7 @@ export const menu = [
     title: "الولاء و المكافات",
     url: "/rewards",
     icon: "rewards.svg",
+    lightIcon: "light-rewards.svg",
   },
   {
     id: 11,

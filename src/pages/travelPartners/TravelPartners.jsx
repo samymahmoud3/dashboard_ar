@@ -57,13 +57,13 @@ const TravelPartners = () => {
       <div className='content'>
         <div className='header'>
           <Stats data={ travelPartnersStats } />
-          <div className='wait-list'>
+          <div className='discount'>
             <div className='title'>
               <img src='users-stats.svg' alt='users' />
               <span>نسبة الخصم</span>
             </div>
-            <div className='discount'>
-              <input type='text' value="10%" />
+            <div className='discount-input'>
+              <input type='text' placeholder='ادخل نسبة الخصم' />
               <button>حفظ</button>
             </div>
           </div>

@@ -11,6 +11,7 @@ import PackagesControl from "./pages/packagesControl/PackagesControl";
 import Landmarks from "./pages/landmarks/Landmarks";
 import LandmarksControl from "./pages/landmarksControl/LandmarksControl";
 import Hotels from "./pages/hotels/Hotels";
+import Rewards from "./pages/rewards/Rewards";
 import './styles/global.scss';
 
 function App() {
@@ -75,6 +76,10 @@ const router = createBrowserRouter([
       {
         path: '/hotels',
         element: <Hotels />
+      },
+      {
+        path: '/rewards',
+        element: <Rewards />
       },
     ]
   },
