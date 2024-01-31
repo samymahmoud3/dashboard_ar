@@ -74,7 +74,53 @@ export const menu = [
     title: "الاعدادات",
     url: "/settings",
     icon: "settings.svg",
+    lightIcon: "light-settings.svg",
   },
+];
+
+export const settingsMenu = [
+  {
+    id: 1,
+    title: "الملف الشخصى",
+    icon: "profile.svg",
+    lightIcon: "light-profile.svg",
+  },
+  {
+    id: 2,
+    title: "الدفع",
+    icon: "payment.svg",
+    lightIcon: "light-payment.svg",
+  },
+  {
+    id: 3,
+    title: "اماكن النقل",
+    icon: "location.svg",
+    lightIcon: "light-location.svg",
+  },
+  {
+    id: 4,
+    title: "انواع السيارات",
+    icon: "car.svg",
+    lightIcon: "light-car.svg",
+  },
+  {
+    id: 5,
+    title: "اسعارنا",
+    icon: "dollar.svg",
+    lightIcon: "light-dollar.svg",
+  },
+  {
+    id: 6,
+    title: "تواصل معنا",
+    icon: "phone.svg",
+    lightIcon: "light-phone.svg",
+  },
+  {
+    id: 7,
+    title: "المعلومات الاضافية",
+    icon: "info.svg",
+    lightIcon: "light-info.svg",
+  }
 ];
 
 export const homeNumbers = [

@@ -12,6 +12,7 @@ import Landmarks from "./pages/landmarks/Landmarks";
 import LandmarksControl from "./pages/landmarksControl/LandmarksControl";
 import Hotels from "./pages/hotels/Hotels";
 import Rewards from "./pages/rewards/Rewards";
+import Settings from "./pages/settings/Settings";
 import './styles/global.scss';
 
 function App() {
@@ -80,6 +81,10 @@ const router = createBrowserRouter([
       {
         path: '/rewards',
         element: <Rewards />
+      },
+      {
+        path: '/settings',
+        element: <Settings />
       },
     ]
   },
