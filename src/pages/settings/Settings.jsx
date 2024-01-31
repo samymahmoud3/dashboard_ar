@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { settingsMenu } from '../../data';
 import Profile from '../../components/profile/Profile';
+import Payment from '../../components/payment/Payment';
 import './settings.scss';
 
 const Settings = () => {
@@ -32,6 +33,9 @@ const Settings = () => {
           <div className='main-content'>
             {
               active === 1 && <Profile />
+            }
+            {
+              active === 2 && <Payment />
             }
           </div>
         </div>

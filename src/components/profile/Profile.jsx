@@ -7,8 +7,8 @@ const Profile = () => {
   return (
     <div className='profile'>
       <div className='edit'>
-        <p className={ active === 'email' && "active" } onClick={ () => setActive('email') }>تعديل البريد الالكترونى</p>
-        <p className={ active === 'password' && "active" } onClick={ () => setActive('password') }>تعديل كلمه المرور</p>
+        <p className={ active === 'email' ? "active" : " " } onClick={ () => setActive('email') }>تعديل البريد الالكترونى</p>
+        <p className={ active === 'password'? "active" : " " } onClick={ () => setActive('password') }>تعديل كلمه المرور</p>
       </div>
       <div className='body'>
         {

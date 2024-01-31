@@ -1088,6 +1088,52 @@ export const hotelsRows = [
   },
 ];
 
+export const paymentRows = [
+  {
+    id: 1,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    bookingDate: "30.10.2023",
+    paid: "200 ريال",
+  },
+  {
+    id: 2,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    bookingDate: "30.10.2023",
+    paid: "200 ريال",
+  },
+  {
+    id: 3,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    bookingDate: "30.10.2023",
+    paid: "200 ريال",
+  },
+  {
+    id: 4,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    bookingDate: "30.10.2023",
+    paid: "200 ريال",
+  },
+  {
+    id: 5,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    bookingDate: "30.10.2023",
+    paid: "200 ريال",
+  },
+  {
+    id: 6,
+    name: "محمد احمد علي محمد",
+    phone: "+20 994956611",
+    bookingDate: "30.10.2023",
+    paid: "200 ريال",
+  },
+  
+];
+
 export const bookingStats = [
   {
     id: 1,
@@ -1317,5 +1363,23 @@ export const paymentMethods = [
         numberColor: "#45464E"
       },
     ]
+  },
+];
+
+export const paymentOptions = [
+  {
+    id: 1,
+    title: "الدفع بواسطة بطاقة الائتمان",
+    description: "أدفع المبلغ كاملا الان",
+  },
+  {
+    id: 2,
+    title: "الدفع النقدى",
+    description: "أدفع 25% الآن و 75% عند الوصول",
+  },
+  {
+    id: 3,
+    title: "الدفع عند الوصول",
+    description: "ادفع المبلغ كاملا عند الوصول",
   },
 ];

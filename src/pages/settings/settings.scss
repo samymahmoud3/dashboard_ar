@@ -7,6 +7,10 @@
   .content {
     padding: 24px 24px 13px 24px;
 
+    @include sm {
+      padding: 10px;
+    }
+
     .header {
       display: flex;
       justify-content: space-between;
@@ -95,12 +99,15 @@
           background-color: $yellow-color;
           color: $white-color;
         }
-
       }
 
       .main-content {
-        width: 100%;
+        width: 80%;
         padding: 0px 24px;
+
+        @include sm {
+          padding: 10px;
+        }
       }
     }
   }
