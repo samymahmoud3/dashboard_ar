@@ -2,8 +2,9 @@ import { useState } from 'react';
 import { settingsMenu } from '../../data';
 import Profile from '../../components/profile/Profile';
 import Payment from '../../components/payment/Payment';
+import AddPlace from '../../components/addPlace/AddPlace';
+import CarsTypes from '../../components/carsTypes/CarsTypes';
 import './settings.scss';
-import ValueList from '../../components/addPlace/AddPlace';
 
 const Settings = () => {
   const [active, setActive] = useState(1)
@@ -39,7 +40,10 @@ const Settings = () => {
               active === 2 && <Payment />
             }
             {
-              active === 3 && <ValueList />
+              active === 3 && <AddPlace />
+            }
+            {
+              active === 4 && <CarsTypes />
             }
           </div>
         </div>

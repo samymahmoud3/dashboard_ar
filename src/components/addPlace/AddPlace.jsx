@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './addPlace.scss';
 
-const ValueList = () => {
+const AddPlace = () => {
   const [values, setValues] = useState([]); // Initialize an empty array for values
   const [inputValue, setInputValue] = useState(''); // To capture the input value
 
@@ -52,4 +52,4 @@ const ValueList = () => {
   );
 };
 
-export default ValueList;
+export default AddPlace;

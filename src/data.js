@@ -1134,6 +1134,100 @@ export const paymentRows = [
   
 ];
 
+export const carsTypesRows = [
+  {
+    id: 1,
+    carImg: "toyota-car.webp",
+    type: "هيونداي",
+    category: "اقتصادية",
+    actions: [
+      {
+        id: 1,
+        edit: "edit.svg",
+        delete: "delete.svg",
+      }
+    ],
+  },
+  {
+    id: 2,
+    carImg: "toyota-car.webp",
+    type: "هيونداي",
+    category: "اقتصادية",
+    actions: [
+      {
+        id: 1,
+        edit: "edit.svg",
+        delete: "delete.svg",
+      }
+    ],
+  },
+  {
+    id: 3,
+    carImg: "toyota-car.webp",
+    type: "هيونداي",
+    category: "اقتصادية",
+    actions: [
+      {
+        id: 1,
+        edit: "edit.svg",
+        delete: "delete.svg",
+      }
+    ],
+  },
+  {
+    id: 4,
+    carImg: "toyota-car.webp",
+    type: "هيونداي",
+    category: "اقتصادية",
+    actions: [
+      {
+        id: 1,
+        edit: "edit.svg",
+        delete: "delete.svg",
+      }
+    ],
+  },
+  {
+    id: 5,
+    carImg: "toyota-car.webp",
+    type: "هيونداي",
+    category: "اقتصادية",
+    actions: [
+      {
+        id: 1,
+        edit: "edit.svg",
+        delete: "delete.svg",
+      }
+    ],
+  },
+  {
+    id: 6,
+    carImg: "toyota-car.webp",
+    type: "هيونداي",
+    category: "اقتصادية",
+    actions: [
+      {
+        id: 1,
+        edit: "edit.svg",
+        delete: "delete.svg",
+      }
+    ],
+  },
+  {
+    id: 7,
+    carImg: "toyota-car.webp",
+    type: "هيونداي",
+    category: "اقتصادية",
+    actions: [
+      {
+        id: 1,
+        edit: "edit.svg",
+        delete: "delete.svg",
+      }
+    ],
+  },
+];
+
 export const bookingStats = [
   {
     id: 1,
