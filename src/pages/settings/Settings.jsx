@@ -4,6 +4,7 @@ import Profile from '../../components/profile/Profile';
 import Payment from '../../components/payment/Payment';
 import AddPlace from '../../components/addPlace/AddPlace';
 import CarsTypes from '../../components/carsTypes/CarsTypes';
+import Prices from '../../components/prices/Prices';
 import './settings.scss';
 
 const Settings = () => {
@@ -26,7 +27,7 @@ const Settings = () => {
                   key={ item.id }
                   onClick={ () => setActive(item.id) }
                 >
-                  <img src={ active === item.id ? item.lightIcon : item.icon  } alt={ item.title } /> 
+                  <img src={ active === item.id ? item.lightIcon : item.icon } alt='' />
                   <span className='itemTitle'>{ item.title }</span>
                 </div>
               ))
@@ -44,6 +45,9 @@ const Settings = () => {
             }
             {
               active === 4 && <CarsTypes />
+            }
+            {
+              active === 5 && <Prices />
             }
           </div>
         </div>
