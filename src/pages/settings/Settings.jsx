@@ -3,6 +3,7 @@ import { settingsMenu } from '../../data';
 import Profile from '../../components/profile/Profile';
 import Payment from '../../components/payment/Payment';
 import './settings.scss';
+import ValueList from '../../components/addPlace/AddPlace';
 
 const Settings = () => {
   const [active, setActive] = useState(1)
@@ -36,6 +37,9 @@ const Settings = () => {
             }
             {
               active === 2 && <Payment />
+            }
+            {
+              active === 3 && <ValueList />
             }
           </div>
         </div>
