@@ -6,6 +6,7 @@ import AddPlace from '../../components/addPlace/AddPlace';
 import CarsTypes from '../../components/carsTypes/CarsTypes';
 import Prices from '../../components/prices/Prices';
 import ContactUs from '../../components/contactUs/ContactUs';
+import AdditionalInfo from '../../components/additionalInfo/AdditionalInfo';
 import './settings.scss';
 
 const Settings = () => {
@@ -52,6 +53,9 @@ const Settings = () => {
             }
             {
               active === 6 && <ContactUs />
+            }
+            {
+              active === 7 && <AdditionalInfo />
             }
           </div>
         </div>
