@@ -7,6 +7,7 @@ import CarsTypes from '../../components/carsTypes/CarsTypes';
 import Prices from '../../components/prices/Prices';
 import ContactUs from '../../components/contactUs/ContactUs';
 import AdditionalInfo from '../../components/additionalInfo/AdditionalInfo';
+import Reviews from '../../components/reviews/Reviews';
 import './settings.scss';
 
 const Settings = () => {
@@ -56,6 +57,9 @@ const Settings = () => {
             }
             {
               active === 7 && <AdditionalInfo />
+            }
+            {
+              active === 8 && <Reviews />
             }
           </div>
         </div>

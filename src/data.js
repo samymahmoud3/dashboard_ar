@@ -120,6 +120,12 @@ export const settingsMenu = [
     title: "المعلومات الاضافية",
     icon: "info.svg",
     lightIcon: "light-info.svg",
+  },
+  {
+    id: 8,
+    title: "تقييمات العملاء",
+    icon: "reviews.svg",
+    lightIcon: "light-reviews.svg",
   }
 ];
 
@@ -1300,6 +1306,77 @@ export const pricesRows = [
     car4: "300",
     car5: "300",
     car6: "30.10.2023",
+  },
+];
+
+export const reviewsRows = [
+  {
+    id: 1,
+    name: "محمد احمد علي محمد",
+    review: ["star.svg", "star.svg", "star.svg", "star.svg", "star.svg"],
+    genderArr: [
+      {
+        id: 1,
+        gender: "ذكر",
+      },
+      {
+        id: 2,
+        gender: "انثى",
+      }
+    ],
+    right: "true.svg",
+    wrong: "false.svg",
+  },
+  {
+    id: 2,
+    name: "محمد احمد علي محمد",
+    review: ["star.svg", "star.svg", "star.svg", "star.svg", "star.svg"],
+    genderArr: [
+      {
+        id: 3,
+        gender: "ذكر",
+      },
+      {
+        id: 4,
+        gender: "انثى",
+      }
+    ],
+    right: "true.svg",
+    wrong: "false.svg",
+  },
+  {
+    id: 2,
+    name: "محمد احمد علي محمد",
+    review: ["star.svg", "star.svg", "star.svg", "star.svg", "star.svg"],
+    genderArr: [
+      {
+        id: 5,
+        gender: "ذكر",
+      },
+      {
+        id: 6,
+        gender: "انثى",
+      }
+    ],
+    right: "true.svg",
+    wrong: "false.svg",
+  },
+  {
+    id: 2,
+    name: "محمد احمد علي محمد",
+    review: ["star.svg", "star.svg", "star.svg", "star.svg", "star.svg"],
+    genderArr: [
+      {
+        id: 7,
+        gender: "ذكر",
+      },
+      {
+        id: 8,
+        gender: "انثى",
+      }
+    ],
+    right: "true.svg",
+    wrong: "false.svg",
   },
 ];
 
