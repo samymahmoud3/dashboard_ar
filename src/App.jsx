@@ -14,6 +14,7 @@ import Hotels from "./pages/hotels/Hotels";
 import Rewards from "./pages/rewards/Rewards";
 import Settings from "./pages/settings/Settings";
 import './styles/global.scss';
+import WaitList from "./pages/waitList/WaitList";
 
 function App() {
   const Layout = () => {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: '/drivers',
         element: <Drivers />
+      },
+      {
+        path: '/wait-list-drivers',
+        element: <WaitList />
       },
       {
         path: '/travel-partners',

@@ -9,31 +9,31 @@ const TravelPartners = () => {
     {
       id: "id",
       label: "ID",
-      minWidth: 60,
+      minWidth: 55,
       align: 'center',
     },
     {
       id: "name",
       label: "الاسم بالكامل",
-      minWidth: 200,
+      minWidth: 280,
       align: 'center',
     },
     {
       id: "email",
       label: "البريد الالكترونى",
-      minWidth: 200,
+      minWidth: 280,
       align: 'center',
     },
     {
       id: "phone",
       label: "رقم الواتساب",
-      minWidth: 200,
+      minWidth: 280,
       align: 'center',
     },
     {
       id: "bookingNumbers",
       label: "عدد الحجوزات",
-      minWidth: 178,
+      minWidth: 280,
       align: 'center',
     },
   ];

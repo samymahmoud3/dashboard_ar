@@ -33,7 +33,9 @@ const Stepper = (prop) => {
 
   return (
     <section className="stepper">
-      <div className="close" onClick={ () => setOpenStepper(false) }>x</div>
+      <div className="close" onClick={ () => setOpenStepper(false) }>
+        <img src="close.svg" alt="close" />
+      </div>
       <div className="steps-container">
         <div className="steps-wrapper">{ steps }</div>
         <div className={`progress-line1 ${currentStep >=1 && "proActive"}`} />

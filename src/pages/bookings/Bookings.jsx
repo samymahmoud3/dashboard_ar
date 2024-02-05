@@ -119,7 +119,9 @@ const Bookings = () => {
               { open &&
                 <div className="modal">
                   <h1>تصفية</h1>
-                  <span className="close" onClick={ () => setOpen(false) }>X</span>
+                  <span className="close" onClick={ () => setOpen(false) }>
+                    <img src='close.svg' alt='close' />
+                  </span>
                   <form onSubmit={ handleSubmit }>
                     {/* inputs */ }
                     <div className='filter-inputs'>
