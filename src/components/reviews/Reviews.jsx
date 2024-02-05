@@ -7,10 +7,8 @@ const Reviews = () => {
   const [open, setOpen] = useState(false);
 
   // radio buttons
-  const [round, setRound] = useState("ذكر");
   const handleChangeRounds = (event) => {
     const value = event.target.value;
-    setRound(value);
   }; //end
 
   const columns = [
@@ -62,10 +60,10 @@ const Reviews = () => {
       </div>,
       <div className='radio_buttons'>
         {
-          item.genderArr.map((item) => (
-            <div className="radio" key={ item.id }>
-              <input id={`radio-${item.id}`} name="radio" type="radio" value={item.gender} onChange={ handleChangeRounds } checked={round === item.gender} />
-              <label htmlFor={`radio-${item.id}`} className="radio-label">{ item.gender }</label>
+          item.genderArr.map((i) => (
+            <div className="radio" key={ i.id }>
+              <input id={`radio-${i.id}`} name={`group${item.id}`} type="radio" value={i.gender} onChange={ handleChangeRounds } />
+              <label htmlFor={`radio-${i.id}`} className="radio-label">{ i.gender }</label>
             </div>
           ))
         }

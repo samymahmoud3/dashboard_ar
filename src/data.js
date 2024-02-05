@@ -1345,7 +1345,7 @@ export const reviewsRows = [
     wrong: "false.svg",
   },
   {
-    id: 2,
+    id: 3,
     name: "محمد احمد علي محمد",
     review: ["star.svg", "star.svg", "star.svg", "star.svg", "star.svg"],
     genderArr: [
@@ -1362,7 +1362,7 @@ export const reviewsRows = [
     wrong: "false.svg",
   },
   {
-    id: 2,
+    id: 4,
     name: "محمد احمد علي محمد",
     review: ["star.svg", "star.svg", "star.svg", "star.svg", "star.svg"],
     genderArr: [
