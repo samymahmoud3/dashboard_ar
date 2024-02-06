@@ -24,7 +24,7 @@ const SideNavbar = () => {
           ))
         }
       </div>
-      <Link to='/' className='logout'>
+      <Link to='/login' className='logout'>
         <img src='logout.svg' alt='logout' />
         <span className='title'>تسجيل الخروج</span>
       </Link>

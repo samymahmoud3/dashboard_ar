@@ -13,8 +13,12 @@ import LandmarksControl from "./pages/landmarksControl/LandmarksControl";
 import Hotels from "./pages/hotels/Hotels";
 import Rewards from "./pages/rewards/Rewards";
 import Settings from "./pages/settings/Settings";
-import './styles/global.scss';
 import WaitList from "./pages/waitList/WaitList";
+import Login from "./pages/login/Login";
+import PassRecovery from "./pages/passRecovery/PassRecovery";
+import ConfirmCode from "./pages/confirmCode/ConfirmCode";
+import CreateNewPass from "./pages/createNewPass/CreateNewPass";
+import './styles/global.scss';
 
 function App() {
   const Layout = () => {
@@ -92,6 +96,22 @@ const router = createBrowserRouter([
         element: <Settings />
       },
     ]
+  },
+  {
+    path: '/login',
+    element: <Login />,
+  },
+  {
+    path: '/password-recovery',
+    element: <PassRecovery />,
+  },
+  {
+    path: '/confirm-code',
+    element: <ConfirmCode />,
+  },
+  {
+    path: '/create-new-password',
+    element: <CreateNewPass />,
   },
 ]);
 
