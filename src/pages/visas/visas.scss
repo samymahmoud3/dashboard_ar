@@ -1,0 +1,189 @@
+@import '../../styles/variables.scss';
+@import '../../styles/responsive.scss';
+
+.dash-visas {
+  background-color: $light-gray;
+
+  .content {
+    padding: 24px 24px 13px 24px;
+
+    .header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+
+      .add-place {
+        width: 480px;
+        padding: 11px 15px;
+        border-radius: 12px;
+        background-color: $white-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include xl {
+          width: 400px;
+        }
+
+        @include lg {
+          width: 100%;
+        }
+
+        .title {
+          display: flex;
+          align-items: center;
+
+          span {
+            margin-right: 16px;
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 400;
+            color: $dark-color;
+          }
+        }
+
+        .addPlace-visas {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          gap: 8px;
+
+          @include sm {
+            flex-direction: column;
+          }
+
+          input {
+            height: 50px;
+            width: 280px;
+            flex: 1;
+            padding: 21px 16px 20px 16px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            background-color: $light-gray;
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 400;
+            color: $dark-color;
+
+            @include smd {
+              padding: 14px;
+            }
+
+            @include sm {
+              width: 100%;
+            }
+          }
+
+          .add-btn {
+            height: 50px;
+            padding: 12px 35px;
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 700;
+            color: $white-color;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            border-radius: 6px;
+            background-color: $yellow-color;
+
+            @include smd {
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .available-places {
+      margin-top: 30px;
+
+      .title {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 500;
+        color: $dark-color;
+        margin-bottom: 16px;
+
+        @include smd {
+          font-size: 15px;
+        }
+      }
+
+      .places {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        .place {
+          position: relative;
+          padding: 8px 12px;
+          background-color: $light-gray;
+          border-radius: 4px;
+          font-size: 14px;
+          line-height: 16px;
+          font-weight: 500;
+          color: #9094A0;
+
+          &:hover .close-btn {
+            display: block;
+          }
+
+          .close-btn {
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            width: 13px;
+            height: 13px;
+            display: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .visasTable {
+      margin-top: 24px;
+
+      .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+          font-size: 24px;
+          line-height: 29px;
+          font-weight: 500;
+          color: $dark-color;
+
+          @include md {
+            font-size: 19px;
+          }
+        }
+
+        .actions {
+          position: relative;
+          display: flex;
+          align-items: center;
+
+          .filter {
+
+            background-color: $white-color;
+            padding: 12px 16px;
+            border-radius: 4px;
+            border: 1px solid $dark-color;
+            height: 42px;
+            cursor: pointer;
+
+            @include sm {
+              padding: 8px 10px;
+              height: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

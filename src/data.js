@@ -50,27 +50,34 @@ export const menu = [
   },
   {
     id: 8,
+    title: "التاشيرات",
+    url: "/visas",
+    icon: "visas.svg",
+    lightIcon: "light-visas.svg",
+  },
+  {
+    id: 9,
     title: "المزارات",
     url: "/landmarks",
     icon: "landmarks.svg",
     lightIcon: "light-landmarks.svg",
   },
   {
-    id: 9,
+    id: 10,
     title: "الفنادق",
     url: "/hotels",
     icon: "hotels.svg",
     lightIcon: "light-hotels.svg",
   },
   {
-    id: 10,
+    id: 11,
     title: "الولاء و المكافات",
     url: "/rewards",
     icon: "rewards.svg",
     lightIcon: "light-rewards.svg",
   },
   {
-    id: 11,
+    id: 12,
     title: "الاعدادات",
     url: "/settings",
     icon: "settings.svg",
@@ -1380,6 +1387,72 @@ export const reviewsRows = [
   },
 ];
 
+export const visasRows = [
+  {
+    id: 1,
+    name: "محمد احمد علي محمد",
+    email: "Mohamedsaid@gmail.com",
+    from: "مكه",
+    to: "الرياض",
+    bookingDate: "30.10.2023",
+    status: "progress.svg",
+  },
+  {
+    id: 2,
+    name: "محمد احمد علي محمد",
+    email: "Mohamedsaid@gmail.com",
+    from: "مكه",
+    to: "الرياض",
+    bookingDate: "30.10.2023",
+    status: "progress.svg",
+  },
+  {
+    id: 3,
+    name: "محمد احمد علي محمد",
+    email: "Mohamedsaid@gmail.com",
+    from: "مكه",
+    to: "الرياض",
+    bookingDate: "30.10.2023",
+    status: "progress.svg",
+  },
+  {
+    id: 4,
+    name: "محمد احمد علي محمد",
+    email: "Mohamedsaid@gmail.com",
+    from: "مكه",
+    to: "الرياض",
+    bookingDate: "30.10.2023",
+    status: "progress.svg",
+  },
+  {
+    id: 5,
+    name: "محمد احمد علي محمد",
+    email: "Mohamedsaid@gmail.com",
+    from: "مكه",
+    to: "الرياض",
+    bookingDate: "30.10.2023",
+    status: "progress.svg",
+  },
+  {
+    id: 6,
+    name: "محمد احمد علي محمد",
+    email: "Mohamedsaid@gmail.com",
+    from: "مكه",
+    to: "الرياض",
+    bookingDate: "30.10.2023",
+    status: "progress.svg",
+  },
+  {
+    id: 7,
+    name: "محمد احمد علي محمد",
+    email: "Mohamedsaid@gmail.com",
+    from: "مكه",
+    to: "الرياض",
+    bookingDate: "30.10.2023",
+    status: "progress.svg",
+  },
+];
+
 export const bookingStats = [
   {
     id: 1,
@@ -1576,6 +1649,35 @@ export const landmarksStats = [
       {
         title: "الحجوزات الغير مكتمله",
         number: 10000,
+        titleColor: "#FF2619",
+        numberColor: "#FF2619"
+      },
+    ]
+  },
+];
+
+export const visasStats = [
+  {
+    id: 1,
+    title: "التاشيرات",
+    icon: "users-stats.svg",
+    time: ["باليوم", "بالاسبوع", "بالشهر"],
+    numbers: [
+      {
+        title: "عدد الطلبات",
+        number: 300,
+        titleColor: "#8B8D97",
+        numberColor: "#45464E"
+      },
+      {
+        title: "الحجوزات المكتمله",
+        number: 200,
+        titleColor: "#00D015",
+        numberColor: "#00D015"
+      },
+      {
+        title: "الحجوزات الغير مكتمله",
+        number: 100,
         titleColor: "#FF2619",
         numberColor: "#FF2619"
       },

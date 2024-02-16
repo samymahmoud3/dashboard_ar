@@ -18,6 +18,7 @@ import Login from "./pages/login/Login";
 import PassRecovery from "./pages/passRecovery/PassRecovery";
 import ConfirmCode from "./pages/confirmCode/ConfirmCode";
 import CreateNewPass from "./pages/createNewPass/CreateNewPass";
+import Visas from "./pages/visas/Visas";
 import './styles/global.scss';
 
 function App() {
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
       {
         path: '/packages',
         element: <Packages />
+      },
+      {
+        path: '/visas',
+        element: <Visas />
       },
       {
         path: '/packages-control',
