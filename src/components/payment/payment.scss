@@ -103,6 +103,125 @@
     }
   }
 
+  .addImg-container {
+    position: relative;
+    margin-top: 30px;
+
+    .title {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 500;
+      color: $dark-color;
+      margin-bottom: 16px;
+
+      @include smd {
+        font-size: 15px;
+      }
+    }
+
+    .imgs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+
+      .img {
+        position: relative;
+        padding: 8px 12px;
+        border-radius: 4px;
+        display: inline-block;
+
+        &:hover .close-btn {
+          display: block;
+        }
+
+        .close-btn {
+          position: absolute;
+          top: -4px;
+          left: -4px;
+          width: 13px;
+          height: 13px;
+          display: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .show-btn {
+      padding: 12px 35px;
+      border-radius: 6px;
+      background-color: $yellow-color;
+      color: $white-color;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      margin-top: 24px;
+      float: left;
+    }
+
+    .popup-addImg {
+      left: 110px;
+
+      @include smd {
+        left: 0;
+      }
+
+      .content {
+        justify-content: center;
+      }
+
+      .img {
+        width: 225px;
+        height: 165px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin: auto;
+
+        .upload_file {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: #FAFCFE;
+          background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='13' ry='13' stroke='%23E0E5F2FF' stroke-width='3' stroke-dasharray='14' stroke-dashoffset='9' stroke-linecap='round'/%3e%3c/svg%3e");
+          border-radius: 13px;
+          cursor: pointer;
+
+          h2 {
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: $yellow-color;
+          }
+
+          p {
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 500;
+            color: #8F9BBA;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      button {
+        width: 275px;
+        height: 50px;
+        margin: auto;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 20px;
+      }
+    }
+  }
+
   .addCard {
     margin-top: 40px;
 

@@ -6,6 +6,7 @@ import './payment.scss';
 const Payment = () => {
   const [card, setCard] = useState(false);
   const [open, setOpen] = useState(false);
+  const [openImg, setOpenImg] = useState(false);
   const [openNewCard, setOpenNewCard] = useState(false);
   const [openEditCard, setOpenEditCard] = useState(false);
 
@@ -70,6 +71,22 @@ const Payment = () => {
     e.preventDefault();
   }
 
+  const [images, setImages] = useState([]);
+  const [inputKey, setInputKey] = useState(0); // To reset the file input
+
+  const handleImageChange = (e) => {
+    const files = e.target.files;
+    const imagesArray = Array.from(files).map((file) => URL.createObjectURL(file));
+    setImages(images.concat(imagesArray));
+    setInputKey(inputKey + 1); // Reset the input to allow selecting the same image again
+    setOpenImg(false);
+  };
+
+  const removeImage = (indexToRemove) => {
+    const filteredImages = images.filter((_, index) => index !== indexToRemove);
+    setImages(filteredImages);
+  };
+
   return (
     <div className="payment">
       <div className='payment-options'>
@@ -92,6 +109,49 @@ const Payment = () => {
           <div className="btn">اضافة</div>
         </div>
       </div>
+
+      <div className='addImg-container'>
+        <h2 className='title'>شركاء المدفوعات</h2>
+        <div className='imgs'>
+          { images.map((image, index) => (
+            <div key={ index } className='img'>
+              <img src={ image } alt={ `image-${index}` } />
+              <img className="close-btn" src="close.svg" alt="delete" onClick={ () => removeImage(index) } />
+            </div>
+          )) }
+        </div>
+        <button className='show-btn' onClick={ () => setOpenImg(true) }>اضافة شريك</button>
+
+        { openImg &&
+          <div className="modal popup-addImg">
+            <h1>اضافة شعار جديد</h1>
+            <span className="close" onClick={ () => setOpenImg(false) }>
+              <img src='close.svg' alt='close' />
+            </span>
+            <form className="content" onSubmit={ handleSubmit }>
+              <div className='filter-inputs'>
+                <div className='img'>
+                  <div className='upload_file' onClick={ () => document.getElementById('fileInput').click() }>
+                    <input
+                      key={ inputKey } // To reset the input when images are added
+                      type='file'
+                      onChange={ handleImageChange }
+                      multiple
+                      id="fileInput"
+                      style={ { display: "none" } }
+                      ref={ fileInput => fileInput && fileInput.setAttribute('accept', 'image/*') } // Allow only image files
+                    />
+                    <img src='/upload.svg' alt='upload file' />
+                    <h2>Upload Files</h2>
+                    <p>PNG, JPG and GIF files are allowed</p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        }
+      </div>
+
       <div className='addCard'>
         <h2>محفظتي</h2>
         {
