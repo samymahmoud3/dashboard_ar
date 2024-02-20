@@ -6,6 +6,7 @@ import './payment.scss';
 const Payment = () => {
   const [card, setCard] = useState(false);
   const [open, setOpen] = useState(false);
+  const [openEdit, setOpenEdit] = useState(false);
   const [openImg, setOpenImg] = useState(false);
   const [openNewCard, setOpenNewCard] = useState(false);
   const [openEditCard, setOpenEditCard] = useState(false);
@@ -98,15 +99,38 @@ const Payment = () => {
                 <h4>{ option.title }</h4>
                 <p>{ option.description }</p>
                 <div className="actions">
-                  <img src="edit.svg" alt="edit" />
+                  <img src="edit.svg" alt="edit" onClick={ () => setOpenEdit(true) } />
                   <img src="delete.svg" alt="edit" />
+                  {
+                    openEdit &&
+                    <div className="modal">
+                      <h1>تعديل خيار دفع</h1>
+                      <span className="close" onClick={ () => setOpenEdit(false) }>
+                        <img src="close.svg" alt="close" />
+                      </span>
+                      <form className="form-popup">
+                        <div className='filter-inputs'>
+                            <div className='input-container'>
+                              <label>النص الاول</label>
+                              <input type='text' placeholder='ادخل النص الاول' required />
+                            </div>
+                            <div className='input-container'>
+                              <label>النص الثانى</label>
+                              <input type='text' placeholder='ادخل النص الثانى' required />
+                            </div>
+                            <div className='input-container'>
+                              <label>النسبة المطلوب دفعها عبر الفيزا</label>
+                              <input type='number' placeholder='ادخل النسبة' required />
+                            </div>
+                        </div>
+                        <button>حفظ</button>
+                      </form>
+                    </div>
+                  }
                 </div>
               </div>
             ))
           }
-        </div>
-        <div className="add-btn">
-          <div className="btn">اضافة</div>
         </div>
       </div>
 

@@ -45,11 +45,11 @@ const Hotels = () => {
   const rows = hotelsRows.map((item) => (
     createBookingData(
       item.id,
-      item.name,
+      <div style={{cursor:"pointer"}} onClick={ () => setOpen(true) }>{ item.name }</div>,
       <p style={ { direction: "ltr" } }>{ item.phone }</p>,
       item.email,
       <div >
-        <img src={ item.right } alt='right' style={ { cursor: "pointer" } } onClick={ () => setOpen(true) } />
+        <img src={ item.right } alt='right' style={ { cursor: "pointer" } } />
         <img src={ item.wrong } alt='wrong' style={ { cursor: "pointer", marginRight: "15px" } } />
       </div>
     )

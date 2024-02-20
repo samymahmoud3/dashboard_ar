@@ -9,6 +9,9 @@ const Bookings = () => {
   const [open, setOpen] = useState(false);
   const [openStepper, setOpenStepper] = useState(false);
 
+  const [active, setActive] = useState();
+  const statusOptions= ["In-Progress", "Completed", "Cancelled" ]
+
   const columns = [
     {
       id: "id",
@@ -60,12 +63,41 @@ const Bookings = () => {
   const rows = bookingRows.map((item) => (
     createBookingData(
       item.id,
-      item.name,
-      <p style={{direction:"ltr"}}>{ item.phone }</p>,
+      <div style={ { cursor: "pointer" } } onClick={ () => setOpenStepper(true) }>{ item.name }</div>,
+      <p style={ { direction: "ltr" } }>{ item.phone }</p>,
       item.trip,
       item.bookingDate,
       item.payment,
-      <img style={{cursor:"pointer"}} src={ item.status } alt='status' onClick={() => setOpenStepper(true)} />
+      <div className="dropdown-status" onMouseLeave={ () => setActive(!item.id) } >
+        <div className="dropdown">
+          <div
+            className={ `dropdown-btn ${item.status.toLowerCase() === 'cancelled'? "cancel" : item.status.toLowerCase() === "completed" ? "completed" : ''}` }
+            onClick={ () => { setActive(item.id) } }
+          >
+            <p>{ item.status }</p>
+            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 6.5L8 10.5L4 6.5" stroke="#BEC0CA" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+          {
+            active === item.id &&
+            <div className="dropdown-content">
+              {
+                statusOptions.map((option, index) => (
+                  <div className="dropdown-item"
+                    key={ index }
+                    onClick={ () => {
+                      setActive(!item.id);
+                    } }
+                  >
+                    { option }
+                  </div>
+                ))
+              }
+            </div>
+          }
+        </div>
+      </div>
     )
   ));
   

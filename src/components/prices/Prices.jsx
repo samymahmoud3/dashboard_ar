@@ -11,9 +11,10 @@ import './prices.scss';
 import { pricesRows } from '../../data';
 
 const Prices = () => {
-
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(7);
+  const [open, setOpen] = useState(false);
+  const [openEdit, setOpenEdit] = useState(false);
 
   const columns = [
     {
@@ -64,10 +65,16 @@ const Prices = () => {
       minWidth: 89,
       align: 'center',
     },
+    {
+      id: "edit",
+      label: "تعديل",
+      minWidth: 55,
+      align: 'center',
+    },
   ];
 
-  function createBookingData(id, trip, car1, car2, car3, car4, car5, car6,) {
-    return { id, trip, car1, car2, car3, car4, car5, car6 };
+  function createBookingData(id, trip, car1, car2, car3, car4, car5, car6, edit) {
+    return { id, trip, car1, car2, car3, car4, car5, car6, edit };
   }
   const rows = pricesRows.map((item) => (
     createBookingData(
@@ -81,6 +88,7 @@ const Prices = () => {
       item.car4,
       item.car5,
       item.car6,
+      <img src="edit.svg" alt="edit" style={{cursor:"pointer"}} onClick={ () => setOpenEdit(true) } />
     )
   ));
 
@@ -149,7 +157,99 @@ const Prices = () => {
       </Paper>
       {/* add */ }
       <div className='addNew-btn'>
-        <div className='btn'>اضافة رحلة جديدة </div>
+        <div className='btn' onClick={() => setOpen(true)}>اضافة رحلة جديدة </div>
+        { open &&
+        <div className="modal">
+          <h1>اضافة رحلة جديدة</h1>
+          <span className="close" onClick={ () => setOpen(false) }>
+            <img src="close.svg" alt="close" />
+          </span>
+          <form className="form-popup">
+            <div className='filter-inputs'>
+              <div className='input-container'>
+                <label>مسار الرحله</label>
+                <input type='text' placeholder='ادخل مسار الرحله  ' required />
+              </div>
+              <div className='input-container'>
+                <label>سيارة سيدان
+                  سوناتا/كامرى</label>
+                <input type='number' placeholder='ادخل المبلغ ' required />
+              </div>
+              <div className='input-container'>
+                <label>سيارات عائلية
+                  جمس بوكن XL</label>
+                <input type='number' placeholder='ادخل المبلغ' required />
+              </div>
+              <div className='input-container'>
+                <label>سيارات عائلية
+                  (فئة اتش وان)</label>
+                <input type='number' placeholder='ادخل المبلغ' required />
+              </div>
+              <div className='input-container'>
+                <label>باصات</label>
+                <input type='number' placeholder='ادخل المبلغ' required />
+              </div>
+              <div className='input-container'>
+                <label>سيارات VIP
+                  لكزس ES</label>
+                <input type='number' placeholder='ادخل المبلغ' required />
+              </div>
+              <div className='input-container'>
+                <label>السيارات الفارهة
+                  (مرسيدس. بى ام)</label>
+                <input type='number' placeholder='ادخل المبلغ' required />
+              </div>
+            </div>
+            <button>اضافة</button>
+          </form>
+        </div>
+      }
+      { openEdit &&
+        <div className="modal">
+          <h1>تعديل</h1>
+          <span className="close" onClick={ () => setOpenEdit(false) }>
+            <img src="close.svg" alt="close" />
+          </span>
+          <form className="form-popup">
+            <div className='filter-inputs'>
+              <div className='input-container'>
+                <label>مسار الرحله</label>
+                <input type='text' placeholder='ادخل مسار الرحله ' required />
+              </div>
+              <div className='input-container'>
+                <label>سيارة سيدان
+                  سوناتا/كامرى</label>
+                <input type='number' placeholder='ادخل المبلغ ' required />
+              </div>
+              <div className='input-container'>
+                <label>سيارات عائلية
+                  جمس بوكن XL</label>
+                <input type='number' placeholder='ادخل المبلغ' required />
+              </div>
+              <div className='input-container'>
+                <label>سيارات عائلية
+                  (فئة اتش وان)</label>
+                <input type='number' placeholder='ادخل المبلغ' required />
+              </div>
+              <div className='input-container'>
+                <label>باصات</label>
+                <input type='number' placeholder='ادخل المبلغ' required />
+              </div>
+              <div className='input-container'>
+                <label>سيارات VIP
+                  لكزس ES</label>
+                <input type='number' placeholder='ادخل المبلغ' required />
+              </div>
+              <div className='input-container'>
+                <label>السيارات الفارهة
+                  (مرسيدس. بى ام)</label>
+                <input type='number' placeholder='ادخل المبلغ' required />
+              </div>
+            </div>
+            <button>تعديل</button>
+          </form>
+        </div>
+      }
       </div>
     </div>
   )

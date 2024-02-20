@@ -52,13 +52,13 @@ const WaitList = () => {
   const rows = waitListRows.map((item) => (
     createBookingData2(
       item.id,
-      item.name,
+      <div style={{cursor:"pointer"}} onClick={ () => setOpenStepper(true) }>{ item.name }</div>,
       item.email,
       <p style={ { direction: "ltr" } }>{ item.phone }</p>,
       item.carType,
       item.status.map((item) => (
         <div key={ item.id } style={{display: "flex", gap: "15px", justifyContent: "center"}}>
-          <img style={ { cursor: "pointer" } } src={ item.true } alt='true' onClick={ () => setOpenStepper(true) } />
+          <img style={ { cursor: "pointer" } } src={ item.true } alt='true' />
           <img style={ { cursor: "pointer" } } src={ item.false } alt='false' />
         </div>
       ))

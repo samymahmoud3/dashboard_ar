@@ -10,7 +10,7 @@ import { useRef, useState } from 'react';
 import './dataControl.scss';
 
 const DataControl = (prop) => {
-  const { columns, rows, numbers, navTitle, title, addNew_btn, categories } = prop;
+  const { columns, rows, numbers, navTitle, title, addNew_btn, categories, setOpen } = prop;
 
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(numbers);
@@ -92,9 +92,9 @@ const DataControl = (prop) => {
         </Paper>
         {/* add */ }
         <div className='addNew-btn'>
-          <div className='btn'>
-          { addNew_btn }
-        </div>
+          <div className='btn' onClick={ () => setOpen(true) }>
+            { addNew_btn }
+          </div>
         </div>
         <div className='upload_items' >
           {

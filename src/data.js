@@ -265,7 +265,7 @@ export const bookingRows = [
     trip: "جده / مكه",
     bookingDate: "30.10.2023",
     payment: "نقدي",
-    status: "progress.svg",
+    status: "In-Progress",
   },
   {
     id: 2,
@@ -274,7 +274,7 @@ export const bookingRows = [
     trip: "جده / مكه",
     bookingDate: "30.10.2023",
     payment: "نقدي",
-    status: "progress.svg",
+    status: "In-Progress",
   },
   {
     id: 3,
@@ -283,7 +283,7 @@ export const bookingRows = [
     trip: "جده / مكه",
     bookingDate: "30.10.2023",
     payment: "نقدي",
-    status: "completed.svg",
+    status: "Completed",
   },
   {
     id: 4,
@@ -292,7 +292,7 @@ export const bookingRows = [
     trip: "جده / مكه",
     bookingDate: "30.10.2023",
     payment: "نقدي",
-    status: "cancelled.svg",
+    status: "Cancelled",
   },
   {
     id: 5,
@@ -301,7 +301,7 @@ export const bookingRows = [
     trip: "جده / مكه",
     bookingDate: "30.10.2023",
     payment: "نقدي",
-    status: "progress.svg",
+    status: "In-Progress",
   },
   {
     id: 6,
@@ -310,7 +310,7 @@ export const bookingRows = [
     trip: "جده / مكه",
     bookingDate: "30.10.2023",
     payment: "نقدي",
-    status: "progress.svg",
+    status: "In-Progress",
   },
   {
     id: 7,
@@ -319,7 +319,7 @@ export const bookingRows = [
     trip: "جده / مكه",
     bookingDate: "30.10.2023",
     payment: "نقدي",
-    status: "progress.svg",
+    status: "Completed",
   },
   {
     id: 8,
@@ -328,7 +328,7 @@ export const bookingRows = [
     trip: "جده / مكه",
     bookingDate: "30.10.2023",
     payment: "نقدي",
-    status: "progress.svg",
+    status: "Cancelled",
   },
   {
     id: 9,
@@ -337,7 +337,7 @@ export const bookingRows = [
     trip: "جده / مكه",
     bookingDate: "30.10.2023",
     payment: "نقدي",
-    status: "progress.svg",
+    status: "Completed",
   },
 ];
 
@@ -823,7 +823,7 @@ export const packagesRows = [
     phone: "+20 994956611",
     category: "اقتصادية",
     payment: "نقدي",
-    status: "progress.svg",
+    status: "Cancelled",
   },
   {
     id: 2,
@@ -831,7 +831,7 @@ export const packagesRows = [
     phone: "+20 994956611",
     category: "اقتصادية",
     payment: "نقدي",
-    status: "completed.svg",
+    status: "Completed",
   },
   {
     id: 3,
@@ -839,7 +839,7 @@ export const packagesRows = [
     phone: "+20 994956611",
     category: "اقتصادية",
     payment: "نقدي",
-    status: "cancelled.svg",
+    status: "Cancelled",
   },
   {
     id: 4,
@@ -847,7 +847,7 @@ export const packagesRows = [
     phone: "+20 994956611",
     category: "اقتصادية",
     payment: "نقدي",
-    status: "progress.svg",
+    status: "In-Progress",
   },
   {
     id: 5,
@@ -855,7 +855,7 @@ export const packagesRows = [
     phone: "+20 994956611",
     category: "اقتصادية",
     payment: "نقدي",
-    status: "progress.svg",
+    status: "In-Progress",
   },
   {
     id: 6,
@@ -863,7 +863,7 @@ export const packagesRows = [
     phone: "+20 994956611",
     category: "اقتصادية",
     payment: "نقدي",
-    status: "progress.svg",
+    status: "In-Progress",
   },
   {
     id: 7,
@@ -871,7 +871,7 @@ export const packagesRows = [
     phone: "+20 994956611",
     category: "اقتصادية",
     payment: "نقدي",
-    status: "progress.svg",
+    status: "Completed",
   },
   {
     id: 8,
@@ -879,7 +879,7 @@ export const packagesRows = [
     phone: "+20 994956611",
     category: "اقتصادية",
     payment: "نقدي",
-    status: "progress.svg",
+    status: "Completed",
   },
   {
     id: 9,
@@ -887,7 +887,7 @@ export const packagesRows = [
     phone: "+20 994956611",
     category: "اقتصادية",
     payment: "نقدي",
-    status: "progress.svg",
+    status: "Completed",
   },
 ];
 
@@ -942,7 +942,7 @@ export const landmarksRows = [
     place: "مكة",
     category: "اقتصادية",
     payment: "نقدي",
-    status: "progress.svg",
+    status: "In-Progress",
   },
   {
     id: 2,
@@ -951,7 +951,7 @@ export const landmarksRows = [
     place: "مكة",
     category: "اقتصادية",
     payment: "نقدي",
-    status: "completed.svg",
+    status: "Completed",
   },
   {
     id: 3,
@@ -960,7 +960,7 @@ export const landmarksRows = [
     place: "مكة",
     category: "اقتصادية",
     payment: "نقدي",
-    status: "cancelled.svg",
+    status: "Cancelled",
   },
   {
     id: 4,
@@ -969,7 +969,7 @@ export const landmarksRows = [
     place: "مكة",
     category: "اقتصادية",
     payment: "نقدي",
-    status: "progress.svg",
+    status: "In-Progress",
   },
   {
     id: 5,
@@ -978,7 +978,7 @@ export const landmarksRows = [
     place: "مكة",
     category: "اقتصادية",
     payment: "نقدي",
-    status: "progress.svg",
+    status: "In-Progress",
   },
   {
     id: 6,
@@ -987,7 +987,7 @@ export const landmarksRows = [
     place: "مكة",
     category: "اقتصادية",
     payment: "نقدي",
-    status: "progress.svg",
+    status: "In-Progress",
   },
   {
     id: 7,
@@ -996,7 +996,7 @@ export const landmarksRows = [
     place: "مكة",
     category: "اقتصادية",
     payment: "نقدي",
-    status: "progress.svg",
+    status: "In-Progress",
   },
   {
     id: 8,
@@ -1005,7 +1005,7 @@ export const landmarksRows = [
     place: "مكة",
     category: "اقتصادية",
     payment: "نقدي",
-    status: "progress.svg",
+    status: "In-Progress",
   },
   {
     id: 9,
@@ -1014,7 +1014,7 @@ export const landmarksRows = [
     place: "مكة",
     category: "اقتصادية",
     payment: "نقدي",
-    status: "progress.svg",
+    status: "In-Progress",
   },
 ];
 
@@ -1395,7 +1395,7 @@ export const visasRows = [
     from: "مكه",
     to: "الرياض",
     bookingDate: "30.10.2023",
-    status: "progress.svg",
+    status: "In-Progress",
   },
   {
     id: 2,
@@ -1404,7 +1404,7 @@ export const visasRows = [
     from: "مكه",
     to: "الرياض",
     bookingDate: "30.10.2023",
-    status: "progress.svg",
+    status: "Completed",
   },
   {
     id: 3,
@@ -1413,7 +1413,7 @@ export const visasRows = [
     from: "مكه",
     to: "الرياض",
     bookingDate: "30.10.2023",
-    status: "progress.svg",
+    status: "Cancelled",
   },
   {
     id: 4,
@@ -1422,7 +1422,7 @@ export const visasRows = [
     from: "مكه",
     to: "الرياض",
     bookingDate: "30.10.2023",
-    status: "progress.svg",
+    status: "In-Progress",
   },
   {
     id: 5,
@@ -1431,7 +1431,7 @@ export const visasRows = [
     from: "مكه",
     to: "الرياض",
     bookingDate: "30.10.2023",
-    status: "progress.svg",
+    status: "In-Progress",
   },
   {
     id: 6,
@@ -1440,7 +1440,7 @@ export const visasRows = [
     from: "مكه",
     to: "الرياض",
     bookingDate: "30.10.2023",
-    status: "progress.svg",
+    status: "In-Progress",
   },
   {
     id: 7,
@@ -1449,7 +1449,7 @@ export const visasRows = [
     from: "مكه",
     to: "الرياض",
     bookingDate: "30.10.2023",
-    status: "progress.svg",
+    status: "In-Progress",
   },
 ];
 
